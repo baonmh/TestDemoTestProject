@@ -1,0 +1,100 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\bao.nguyenmh\\Desktop\\Work\\WPFTestDemo\\WPFTestDemo\\WPFTestDemo\\WPFTestDemo.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\bao.nguyenmh\\Desktop\\Work\\WPFTestDemo\\WPFTestDemo\\WPFTestDemo\\WPFTestDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bao.nguyenmh\\Desktop\\Work\\WPFTestDemo\\WPFTestDemo\\WPFTestDemo\\WPFTestDemo.csproj",
+        "projectName": "WPFTestDemo",
+        "projectPath": "C:\\Users\\bao.nguyenmh\\Desktop\\Work\\WPFTestDemo\\WPFTestDemo\\WPFTestDemo\\WPFTestDemo.csproj",
+        "packagesPath": "C:\\Users\\bao.nguyenmh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bao.nguyenmh\\Desktop\\Work\\WPFTestDemo\\WPFTestDemo\\WPFTestDemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bao.nguyenmh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "ExtentReports": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "FlaUI.Core": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "FlaUI.UIA2": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "FlaUI.UIA3": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.2, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "ReportPortal.NUnit": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

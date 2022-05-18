@@ -1,0 +1,346 @@
+ExponentialRetryRequestExecuter Error: 0 : 09:28:19.7523550 : 1-testhost : Unexpected exception: ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+TestReporter Error: 0 : 09:28:19.7658840 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:28:19.7665346 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:28:19.7670308 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:28:19.7674955 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:28:19.7679834 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:28:19.7685047 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:28:23.6455216 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:28:23.6470965 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:28:23.6476899 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:28:23.6482176 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:28:23.6488441 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:28:23.6493875 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+LaunchReporter Error: 0 : 09:28:23.6538909 : 1-testhost : System.Exception: Cannot finish launch due starting launch failed.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 8cee61a9-703e-4f46-88c5-f7ce172396de"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---

@@ -1,0 +1,1 @@
+cd NUnitRunner && nunit3-console.exe "C:\Users\hung.tranmanh\source\repos\WPFTestDemo\WPFTestDemo\bin\Debug\net6.0-windows\WPFTestDemo.dll"

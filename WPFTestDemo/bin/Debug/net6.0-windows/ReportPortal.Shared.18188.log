@@ -1,0 +1,976 @@
+ExponentialRetryRequestExecuter Error: 0 : 21:32:51.7436793 : 1-testhost : Error while invoking '<Start>b__4' method. Current attempt: 0. Waiting 8 seconds and retrying it.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+ExponentialRetryRequestExecuter Error: 0 : 21:33:03.7977731 : 1-testhost : Error while invoking '<Start>b__4' method. Current attempt: 1. Waiting 16 seconds and retrying it.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+ExponentialRetryRequestExecuter Error: 0 : 21:33:23.8958941 : 1-testhost : Error while invoking '<Start>b__4' method. Current attempt: 2.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+TestReporter Error: 0 : 21:33:23.9077592 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9103074 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9125920 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9142793 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9205491 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9205561 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9205616 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9208411 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9224100 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9227986 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9241025 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9248708 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9292380 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9293267 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9294154 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9294266 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9312066 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9460133 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 21:33:23.9475245 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:8080))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:8080)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.

@@ -1,0 +1,12 @@
+ReportPortalListener Error: 0 : 09:37:01.6729440 : 1-testhost : ReportPortal exception was thrown.
+ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111

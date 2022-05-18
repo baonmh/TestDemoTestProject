@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="3" result="Failed" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="1" engine-version="3.15.0.0" clr-version="4.0.30319.42000" start-time="2022-04-28 09:06:49Z" end-time="2022-04-28 09:06:52Z" duration="2.581681">
+  <command-line><![CDATA[nunit3-console  WPFTestDemo.dll]]></command-line>
+  <test-suite type="Assembly" id="1-1007" name="WPFTestDemo.dll" fullname="C:/Users/hung.tranmanh/source/repos/WPFTestDemo/WPFTestDemo/bin/Debug/net6.0-windows/WPFTestDemo.dll" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2022-04-28T09:06:49.9305118Z" end-time="2022-04-28T09:06:52.0935888Z" duration="2.163034" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="1">
+    <environment framework-version="3.13.2.0" clr-version="6.0.4" os-version="Microsoft Windows 10.0.19044" platform="Win32NT" cwd="C:\Users\hung.tranmanh\source\repos\WPFTestDemo\WPFTestDemo\bin\Debug\net6.0-windows" machine-name="HUNGTRANMANH" user="hung.tranmanh" user-domain="STS" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\hung.tranmanh\source\repos\WPFTestDemo\WPFTestDemo\bin\Debug\net6.0-windows" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETCoreApp,Version=v6.0" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="TargetRuntimeFramework" value="netcore-6.0" />
+      <setting name="NumberOfTestWorkers" value="12" />
+    </settings>
+    <properties>
+      <property name="_PID" value="25424" />
+      <property name="_APPDOMAIN" value="nunit-agent" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1-1008" name="WPFTestDemo" fullname="WPFTestDemo" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2022-04-28T09:06:49.9352152Z" end-time="2022-04-28T09:06:52.0935858Z" duration="2.158363" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="1">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1-1009" name="Test" fullname="WPFTestDemo.Test" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2022-04-28T09:06:49.9354284Z" end-time="2022-04-28T09:06:52.0935817Z" duration="2.158146" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1-1000" name="MainScreenTest" fullname="WPFTestDemo.Test.MainScreenTest" classname="WPFTestDemo.Test.MainScreenTest" runstate="Runnable" testcasecount="3" result="Failed" label="Error" site="TearDown" start-time="2022-04-28T09:06:49.9362932Z" end-time="2022-04-28T09:06:52.0935663Z" duration="2.157266" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <failure>
+            <message><![CDATA[One or more child tests had errors
+TearDown : System.IO.FileNotFoundException : Could not load file or assembly 'System.Security.Permissions, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. The system cannot find the file specified.]]></message>
+            <stack-trace><![CDATA[--TearDown
+   at RazorEngine.Roslyn.CSharp.RoslynCompilerServiceBase.CompileType(TypeContext context)
+   at RazorEngine.Templating.RazorEngineCore.CreateTemplateType(ITemplateSource razorTemplate, Type modelType)
+   at RazorEngine.Templating.RazorEngineCore.Compile(ITemplateKey key, Type modelType)
+   at RazorEngine.Templating.RazorEngineService.CompileAndCacheInternal(ITemplateKey key, Type modelType)
+   at RazorEngine.Templating.RazorEngineService.GetCompiledTemplate(ITemplateKey key, Type modelType, Boolean compileOnCacheMiss)
+   at RazorEngine.Templating.RazorEngineService.RunCompile(ITemplateKey key, TextWriter writer, Type modelType, Object model, DynamicViewBag viewBag)
+   at RazorEngine.Templating.DynamicWrapperService.RunCompile(ITemplateKey key, TextWriter writer, Type modelType, Object model, DynamicViewBag viewBag)
+   at RazorEngine.Templating.RazorEngineServiceExtensions.RunCompile(IRazorEngineService service, String name, TextWriter writer, Type modelType, Object model, DynamicViewBag viewBag)
+   at RazorEngine.Templating.RazorEngineServiceExtensions.<>c__DisplayClass16_0.<RunCompile>b__0(TextWriter writer)
+   at RazorEngine.Templating.RazorEngineServiceExtensions.WithWriter(Action`1 withWriter)
+   at RazorEngine.Templating.RazorEngineServiceExtensions.RunCompile(IRazorEngineService service, String name, Type modelType, Object model, DynamicViewBag viewBag)
+   at AventStack.ExtentReports.Reporter.ExtentHtmlReporter.Flush(ReportAggregates reportAggregates)
+   at AventStack.ExtentReports.Core.ReportObservable.<>c__DisplayClass59_0.<NotifyReporters>b__0(IExtentReporter x)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at AventStack.ExtentReports.Core.ReportObservable.NotifyReporters()
+   at AventStack.ExtentReports.Core.ReportObservable.Flush()
+   at AventStack.ExtentReports.ExtentReports.Flush()
+   at WPFTestDemo.Config.ReportsGenerationClass.TearDown() in C:\Users\hung.tranmanh\source\repos\WPFTestDemo\WPFTestDemo\Config\ReportsGenerationClass.cs:line 37]]></stack-trace>
+          </failure>
+          <test-suite type="ParameterizedMethod" id="1-1006" name="Ignore" fullname="WPFTestDemo.Test.MainScreenTest.Ignore" classname="WPFTestDemo.Test.MainScreenTest" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2022-04-28T09:06:49.9806043Z" end-time="2022-04-28T09:06:50.5257323Z" duration="0.545126" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1-1005" name="Ignore This Test" fullname="WPFTestDemo.Test.MainScreenTest.Ignore This Test" methodname="Ignore" classname="WPFTestDemo.Test.MainScreenTest" runstate="Runnable" seed="1805067754" result="Failed" label="Error" start-time="2022-04-28T09:06:49.9808411Z" end-time="2022-04-28T09:06:50.5236961Z" duration="0.542935" asserts="0">
+              <properties>
+                <property name="Category" value="Set2" />
+              </properties>
+              <failure>
+                <message><![CDATA[Ignore
+TearDown : System.IO.FileNotFoundException : Could not load file or assembly 'System.Security.Permissions, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. The system cannot find the file specified.]]></message>
+                <stack-trace><![CDATA[   at WPFTestDemo.Test.MainScreenTest.Ignore(String comment) in C:\Users\hung.tranmanh\source\repos\WPFTestDemo\WPFTestDemo\Test\MainScreenTest.cs:line 70
+
+--TearDown
+   at RazorEngine.Roslyn.CSharp.RoslynCompilerServiceBase.CompileType(TypeContext context)
+   at RazorEngine.Templating.RazorEngineCore.CreateTemplateType(ITemplateSource razorTemplate, Type modelType)
+   at RazorEngine.Templating.RazorEngineCore.Compile(ITemplateKey key, Type modelType)
+   at RazorEngine.Templating.RazorEngineService.CompileAndCacheInternal(ITemplateKey key, Type modelType)
+   at RazorEngine.Templating.RazorEngineService.GetCompiledTemplate(ITemplateKey key, Type modelType, Boolean compileOnCacheMiss)
+   at RazorEngine.Templating.RazorEngineService.RunCompile(ITemplateKey key, TextWriter writer, Type modelType, Object model, DynamicViewBag viewBag)
+   at RazorEngine.Templating.DynamicWrapperService.RunCompile(ITemplateKey key, TextWriter writer, Type modelType, Object model, DynamicViewBag viewBag)
+   at RazorEngine.Templating.RazorEngineServiceExtensions.RunCompile(IRazorEngineService service, String name, TextWriter writer, Type modelType, Object model, DynamicViewBag viewBag)
+   at RazorEngine.Templating.RazorEngineServiceExtensions.<>c__DisplayClass16_0.<RunCompile>b__0(TextWriter writer)
+   at RazorEngine.Templating.RazorEngineServiceExtensions.WithWriter(Action`1 withWriter)
+   at RazorEngine.Templating.RazorEngineServiceExtensions.RunCompile(IRazorEngineService service, String name, Type modelType, Object model, DynamicViewBag viewBag)
+   at AventStack.ExtentReports.Reporter.ExtentHtmlReporter.Flush(ReportAggregates reportAggregates)
+   at AventStack.ExtentReports.Core.ReportObservable.<>c__DisplayClass59_0.<NotifyReporters>b__0(IExtentReporter x)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at AventStack.ExtentReports.Core.ReportObservable.NotifyReporters()
+   at AventStack.ExtentReports.Core.ReportObservable.Flush()
+   at AventStack.ExtentReports.ExtentReports.Flush()
+   at WPFTestDemo.Config.ReportsGenerationClass.AfterTest() in C:\Users\hung.tranmanh\source\repos\WPFTestDemo\WPFTestDemo\Config\ReportsGenerationClass.cs:line 71]]></stack-trace>
+              </failure>
+              <output><![CDATA[Ignore
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="ParameterizedMethod" id="1-1002" name="VeriyUserShouldBeAbleToAddNewItem" fullname="WPFTestDemo.Test.MainScreenTest.VeriyUserShouldBeAbleToAddNewItem" classname="WPFTestDemo.Test.MainScreenTest" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2022-04-28T09:06:50.5261318Z" end-time="2022-04-28T09:06:51.9572793Z" duration="1.431143" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1-1001" name="Veriy User Should Be Able To Add New Item" fullname="WPFTestDemo.Test.MainScreenTest.Veriy User Should Be Able To Add New Item" methodname="VeriyUserShouldBeAbleToAddNewItem" classname="WPFTestDemo.Test.MainScreenTest" runstate="Runnable" seed="1913448760" result="Failed" label="Error" start-time="2022-04-28T09:06:50.5261530Z" end-time="2022-04-28T09:06:51.9572398Z" duration="1.431082" asserts="1">
+              <properties>
+                <property name="Category" value="Set1" />
+              </properties>
+              <failure>
+                <message><![CDATA[TearDown : System.IO.FileNotFoundException : Could not load file or assembly 'System.Security.Permissions, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. The system cannot find the file specified.]]></message>
+                <stack-trace><![CDATA[--TearDown
+   at RazorEngine.Roslyn.CSharp.RoslynCompilerServiceBase.CompileType(TypeContext context)
+   at RazorEngine.Templating.RazorEngineCore.CreateTemplateType(ITemplateSource razorTemplate, Type modelType)
+   at RazorEngine.Templating.RazorEngineCore.Compile(ITemplateKey key, Type modelType)
+   at RazorEngine.Templating.RazorEngineService.CompileAndCacheInternal(ITemplateKey key, Type modelType)
+   at RazorEngine.Templating.RazorEngineService.GetCompiledTemplate(ITemplateKey key, Type modelType, Boolean compileOnCacheMiss)
+   at RazorEngine.Templating.RazorEngineService.RunCompile(ITemplateKey key, TextWriter writer, Type modelType, Object model, DynamicViewBag viewBag)
+   at RazorEngine.Templating.DynamicWrapperService.RunCompile(ITemplateKey key, TextWriter writer, Type modelType, Object model, DynamicViewBag viewBag)
+   at RazorEngine.Templating.RazorEngineServiceExtensions.RunCompile(IRazorEngineService service, String name, TextWriter writer, Type modelType, Object model, DynamicViewBag viewBag)
+   at RazorEngine.Templating.RazorEngineServiceExtensions.<>c__DisplayClass16_0.<RunCompile>b__0(TextWriter writer)
+   at RazorEngine.Templating.RazorEngineServiceExtensions.WithWriter(Action`1 withWriter)
+   at RazorEngine.Templating.RazorEngineServiceExtensions.RunCompile(IRazorEngineService service, String name, Type modelType, Object model, DynamicViewBag viewBag)
+   at AventStack.ExtentReports.Reporter.ExtentHtmlReporter.Flush(ReportAggregates reportAggregates)
+   at AventStack.ExtentReports.Core.ReportObservable.<>c__DisplayClass59_0.<NotifyReporters>b__0(IExtentReporter x)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at AventStack.ExtentReports.Core.ReportObservable.NotifyReporters()
+   at AventStack.ExtentReports.Core.ReportObservable.Flush()
+   at AventStack.ExtentReports.ExtentReports.Flush()
+   at WPFTestDemo.Config.ReportsGenerationClass.AfterTest() in C:\Users\hung.tranmanh\source\repos\WPFTestDemo\WPFTestDemo\Config\ReportsGenerationClass.cs:line 71]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+          <test-suite type="ParameterizedMethod" id="1-1004" name="VeriyUserShouldBeAbleToAddNewItem2" fullname="WPFTestDemo.Test.MainScreenTest.VeriyUserShouldBeAbleToAddNewItem2" classname="WPFTestDemo.Test.MainScreenTest" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2022-04-28T09:06:51.9572949Z" end-time="2022-04-28T09:06:52.0925401Z" duration="0.135245" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1-1003" name="Veriy User Should Be Able To Add New Item - Wrong" fullname="WPFTestDemo.Test.MainScreenTest.Veriy User Should Be Able To Add New Item - Wrong" methodname="VeriyUserShouldBeAbleToAddNewItem2" classname="WPFTestDemo.Test.MainScreenTest" runstate="Runnable" seed="1522624293" result="Failed" label="Error" start-time="2022-04-28T09:06:51.9573141Z" end-time="2022-04-28T09:06:52.0925156Z" duration="0.135202" asserts="0">
+              <properties>
+                <property name="Category" value="Set1" />
+              </properties>
+              <failure>
+                <message><![CDATA[System.Exception : Could not find process with id: 19956
+  ----> System.ArgumentException : Process with an Id of 19956 is not running.
+TearDown : System.IO.FileNotFoundException : Could not load file or assembly 'System.Drawing.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. The system cannot find the file specified.]]></message>
+                <stack-trace><![CDATA[   at FlaUI.Core.Application.FindProcess(Int32 processId)
+   at FlaUI.Core.Application.<WaitWhileMainHandleIsMissing>b__33_0()
+   at FlaUI.Core.Tools.Retry.<>c__DisplayClass12_0.<WhileTrue>b__0()
+   at FlaUI.Core.Tools.Retry.While[T](Func`1 retryMethod, Func`2 checkMethod, Nullable`1 timeout, Nullable`1 interval, Boolean throwOnTimeout, Boolean ignoreException, String timeoutMessage, Boolean lastValueOnTimeout, T defaultOnTimeout)
+   at FlaUI.Core.Tools.Retry.WhileTrue(Func`1 checkMethod, Nullable`1 timeout, Nullable`1 interval, Boolean throwOnTimeout, Boolean ignoreException, String timeoutMessage)
+   at FlaUI.Core.Application.WaitWhileMainHandleIsMissing(Nullable`1 waitTimeout)
+   at FlaUI.Core.Application.GetMainWindow(AutomationBase automation, Nullable`1 waitTimeout)
+   at WPFTestDemo.TestBase.TestInitialize() in C:\Users\hung.tranmanh\source\repos\WPFTestDemo\WPFTestDemo\TestBase.cs:line 86
+--ArgumentException
+   at System.Diagnostics.Process.GetProcessById(Int32 processId, String machineName)
+   at System.Diagnostics.Process.GetProcessById(Int32 processId)
+   at FlaUI.Core.Application.FindProcess(Int32 processId)
+--TearDown
+   at FlaUI.Core.Capturing.Capture.Rectangle(Rectangle bounds, CaptureSettings settings)
+   at FlaUI.Core.Capturing.Capture.Screen(Int32 screenIndex, CaptureSettings settings)
+   at WPFTestDemo.Config.ReportsGenerationClass.CaptureWindow(String screenshotName) in C:\Users\hung.tranmanh\source\repos\WPFTestDemo\WPFTestDemo\Config\ReportsGenerationClass.cs:line 82
+   at WPFTestDemo.Config.ReportsGenerationClass.AfterTest() in C:\Users\hung.tranmanh\source\repos\WPFTestDemo\WPFTestDemo\Config\ReportsGenerationClass.cs:line 56]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

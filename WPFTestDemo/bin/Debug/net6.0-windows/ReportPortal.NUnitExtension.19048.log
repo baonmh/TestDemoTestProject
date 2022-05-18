@@ -1,0 +1,21 @@
+ReportPortalListener Error: 0 : 16:01:21.0872910 : 1-nunit3-console.exe : ReportPortal exception was thrown.
+ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Unauthorized (401) POST http://localhost:8080/api/v1/automation_demo/launch ---> System.Net.Http.HttpRequestException: Response message: {"error":"invalid_token","error_description":"Invalid access token: 82be0e77-db6d-46eb-a3cd-99e61552b1d9"}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendHttpRequestAsync>d__12`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__14`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 113

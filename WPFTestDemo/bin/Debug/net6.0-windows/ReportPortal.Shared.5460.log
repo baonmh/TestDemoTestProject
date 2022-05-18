@@ -1,0 +1,642 @@
+ExponentialRetryRequestExecuter Error: 0 : 09:55:34.1155402 : 1-testhost : Unexpected exception: ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+TestReporter Error: 0 : 09:55:34.1188155 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:34.1194513 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:34.1199866 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:34.1204798 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:34.1209598 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:34.1214539 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:37.0602597 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:37.0616653 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:37.0618421 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:37.0686823 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:38.2801338 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:38.2803092 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:38.2808523 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:38.2882981 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:38.4381171 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:38.4388842 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:38.4444540 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:38.4452766 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:38.4460208 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 09:55:38.4468038 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+LaunchReporter Error: 0 : 09:55:38.4521051 : 1-testhost : System.Exception: Cannot finish launch due starting launch failed.
+ ---> System.AggregateException: One or more errors occurred. (Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch)
+ ---> ReportPortal.Client.ReportPortalException: Response status code does not indicate success: Forbidden (403) POST http://localhost:8080/api/v1/automation_demo/launch
+ ---> System.Net.Http.HttpRequestException: Response message: {"errorCode":4003,"message":"You do not have enough permissions. Please check the list of your available projects."}
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Resources.ServiceBaseResource.CheckSuccessStatusCode(HttpResponseMessage response, Stream stream)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report) in C:\projects\agent-net-nunit\src\ReportPortal.NUnitExtension\ReportPortalListener.Launch.cs:line 111
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
