@@ -34,7 +34,7 @@ namespace WPFTestDemo.Config
         [OneTimeTearDown]
         protected void TearDown()
         {
-//             _extent.Flush();
+            _extent.Flush();
         }
         [SetUp]
         public void BeforeTest()
@@ -68,7 +68,7 @@ namespace WPFTestDemo.Config
                     break;
             }
             _test.Log(logstatus, "Test ended with " +logstatus + stacktrace);
-//             _extent.Flush();
+            _extent.Flush();
         }
 
         public static void CaptureWindow(string screenshotName)
