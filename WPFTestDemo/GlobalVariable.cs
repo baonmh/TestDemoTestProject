@@ -9,7 +9,7 @@ namespace WPFTestDemo
 {
     public class GlobalVariable
     {
-        public static String APP_PATH = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\DemoTest2\\App\\bin\\Debug\\net6.0-windows\\EditingCollections.exe";
+        public static String APP_PATH = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\AppBuild\\App\\bin\\Debug\\net6.0-windows\\EditingCollections.exe";
         public static String ENVIRONMENT = "QA";
         public static String USER = "Executor";
     }
